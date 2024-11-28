@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FINAL_CRUD</title>
+</head>
+<body>
+    
+    <div class="w-75 mx-auto">
+        <h1 class="text-center">CRUD OPERATION</h1>
+        <label for="productNameInput" class="mb-3">productName:</label>
+        <input type="text" id="productNameInput" class="form-control ">
+
+        <label for="productPriceInput"  class="mb-3">productPrice:</label>
+        <input type="number" id="productPriceInput" class="form-control ">
+
+        <label for="productCategoryInput"  class="mb-3">productCategory:</label>
+        <input type="text" id="productCategoryInput" class="form-control ">
+
+        <label for="productDescriptionInput"  class="mb-3">productDescription:</label>
+        <textarea name="" class="w-100" id="productDescriptionInput"></textarea>
+
+        <button class="btn btn-info mb-4" id="addBtn" onclick="addProduct()">Add</button>
+        <button class="btn btn-warning d-none  mb-4" id="updateBtn" onclick="Update()">update</button>
+
+        <input type="search" placeholder="Search..." class="form-control w-75 mx-auto mb-3" id="search" oninput="search()" >
+
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Category</td>
+                    <td>Description</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody id="tBody">
+              
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
